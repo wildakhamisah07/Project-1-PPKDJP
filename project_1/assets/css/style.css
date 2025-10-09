@@ -6,6 +6,47 @@
 .menu {
     padding: 10px 0;
 }
+.menu-section{
+    position: relative;
+    height: 70vh; /*akan rapi tnpa scroll akan mengikuri tinggi layar*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../img/1.png");
+    background-color: rgba(235, 224, 224, 0.3);
+    background-size: cover;
+    background-position: center;
+
+}
+.menu-article{
+    position: relative;
+        height: 70vh;
+        /*akan rapi tnpa scroll akan mengikuri tinggi layar*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("../img/1.png");
+        background-color: rgba(235, 224, 224, 0.3);
+        background-size: cover;
+        background-position: center;
+}
+
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 .navbar-nav .nav-link {
     color: #555;
@@ -154,4 +195,230 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+/* Header Section */
+.header-services {
+    position: relative;
+    height: 500px;
+    background: url('assets/img/19.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.bundling-promo .card {
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.bundling-promo .card:hover {
+    transform: scale(1.05);
+    border-color: #000;
+}
+
+.bundling-promo .badge {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.cp-banner {
+    background: url("../img/25.png") no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #000;
+    position: relative;
+    padding: 0 5%;
+}
+
+.cp-content {
+    max-width: 480px;
+    z-index: 2;
+}
+
+.logo-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.cp-banner p {
+    font-style: normal;
+}
+
+.cp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cp-button:hover {
+    background-color: #25d366;
+    color: #fff;
+    border-color: #25d366;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .cp-banner {
+        background-position: 65% center;
+        height: auto;
+        padding: 80px 30px;
+    }
+
+    .cp-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cp-button {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+/* .hero-img img {
+  border-radius: 10px;
+} */
+
+
+.footer {
+    background-color: #413f32;
+    color: white;
+    padding: 3rem 0 1rem;
+
+}
+
+.footer h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer a:hover {
+    color: #00d9a5;
+}
+
+
+/* ====CONTACK YA */
+.contact-form-box {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 15px;
+    /* Sudut membulat */
+    /* Menambahkan bayangan halus untuk kesan modern */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/* Gaya untuk setiap kotak fitur */
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    /* Jarak antar baris */
+}
+
+/* Gaya Ikon dalam lingkaran */
+.feature-icon {
+    font-size: 2rem;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    /* Membuat bentuk lingkaran */
+    color: #000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+/* Gaya khusus untuk ikon Whatsapp */
+.whatsapp-icon {
+    color: #25d366;
+    /* Warna hijau Whatsapp */
+    border-color: #25d366;
+}
+
+/* Gaya Judul */
+.feature-box h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px !important;
+    color: #000;
+}
+
+/* Gaya Teks Detail */
+.feature-box p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Penyesuaian untuk alamat agar tidak terlalu lebar di satu baris */
+.feature-box p.small {
+    font-size: 0.9rem;
 }
