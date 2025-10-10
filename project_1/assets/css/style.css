@@ -422,3 +422,58 @@
 .feature-box p.small {
     font-size: 0.9rem;
 }
+
+/*article*/
+
+.article-section {
+    padding-bottom: 80px;
+}
+
+.article-detail-img {
+    width: 100%;
+    max-height: 500px;
+    /* supaya proporsional, tidak terlalu tinggi */
+    border-radius: 15px;
+    object-fit: cover;
+    /* jaga gambar tetap proporsional */
+    display: block;
+    margin: 0 auto;
+    /* biar posisi tengah */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-detail-img:hover {
+    transform: scale(1.02);
+    /* efek membesar halus pas di-hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.article-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.article-section p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #555;
+}
+
+.article-section ul {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.article-section ul li {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.article-section ul li span {
+    color: #000;
+    font-weight: 600;
+}
